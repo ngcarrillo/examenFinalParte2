@@ -1,12 +1,17 @@
 package examenfinalparte2;
 
+import javax.swing.JOptionPane;
+
 public class Principal {
 
     public static boolean p = false;
 
     public static void main(String arg[]) {
-        int dig = 2;
-        int ndig = 0;
+        //int dig = 2;
+        //int ndig = 0;
+        int dig = Integer.parseInt (JOptionPane.showInputDialog("Ingresa un numero"));
+        int ndig = Integer.parseInt (JOptionPane.showInputDialog("Ingresa un numero"));
+        
         if (dig <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
